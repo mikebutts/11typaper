@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link
+      href="https://unpkg.com/papercss@1.7.0/dist/paper.min.css"
+      rel="stylesheet"
+    />
+    <link href="http://localhost:8081/styles.css" rel="stylesheet" />
+    <title>this is the contact page - Codelegy's Website</title>
+  </head>
+  <body>
+    <nav class="border fixed split-nav">
+  <div class="nav-brand">
+    <h3>
+      <a href="/"> Mike's Site</a>
+    </h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" name="collapsible1" type="checkbox" />
+    <label for="collapsible1">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </label>
+    <div class="collapsible-body">
+      <ul class="inline">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <li>
+          <a href="/characters">Characters</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="container container-lg mt-large paper">
+      <h3 class="row flex-center margin-bottom-large">Send us a message</h3>
+<div class="row flex-center">
+<form
+  action="https://formspree.io/xvowydar"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+<p><button type="submit">Send</button></p>
+</form>
+</div>
+
+    </div>
+  </body>
+</html>
